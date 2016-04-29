@@ -30,9 +30,19 @@ protocol FMMosaicLayoutDelegate: class, UICollectionViewDelegate {
     
     func headerShouldOverlayContentInCollectionView(collectionView : UICollectionView, collectionViewLayout layout: RUMosaicLayout) -> Bool
    func footerShouldOverlayContentInCollectionView(collectionView : UICollectionView, collectionViewLayout layout: RUMosaicLayout) -> Bool
-    
 }
 
+
+static let kRUDefaultNumberOfColumnsInSection: NSInteger = 2
+static let kRUDefaultCellSize: RUMosaicCellSize = .RUMosaicCellSizeSmall
+static let kRUDefaultHeaderFooterHeight: RUMosaicCellSize = 0.0
+static let kRUDefaultHeaderShouldOverlayContent: Bool = false
+static let kRUDefaultFooterShouldOverlayContent: Bool = false
+
 class RUMosaicLayout:UICollectionViewLayout {
+    
+    var columnHeightsPerSection: NSMutableArray!
+    var cellLayoutAttributes: NSMutableDictionary!
+    var supplementaryLayoutAttributes: NSMutableDictionary!
     
 }

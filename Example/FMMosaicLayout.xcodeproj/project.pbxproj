@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16C68EBB823B4316E125CD70 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF23CF08D3EBDE40465A3363 /* libPods-Tests.a */; };
+		429A27C81CD3199300B1B892 /* RUMosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429A27C71CD3199300B1B892 /* RUMosaicLayout.swift */; };
 		4C5D8598233836885FB6D374 /* libPods-FMMosaicLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E88784FB63092BC5C3699361 /* libPods-FMMosaicLayout.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 		0E432239394A4D76C39CDD75 /* FMMosaicLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FMMosaicLayout.podspec; path = ../FMMosaicLayout.podspec; sourceTree = "<group>"; };
 		18DE6644CFE566A04570A623 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		271B5DC9EE27D3AF67E31CC1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		429A27C61CD3199300B1B892 /* FMMosaicLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMMosaicLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		429A27C71CD3199300B1B892 /* RUMosaicLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUMosaicLayout.swift; sourceTree = "<group>"; };
 		564285136DBFDA264B2EA590 /* Pods-FMMosaicLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMMosaicLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMMosaicLayout/Pods-FMMosaicLayout.release.xcconfig"; sourceTree = "<group>"; };
 		57344976FD9A706AF9A5C0F6 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FMMosaicLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMMosaicLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +170,8 @@
 				B986BA281A8A5F7D00E4584D /* LaunchScreen.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				429A27C71CD3199300B1B892 /* RUMosaicLayout.swift */,
+				429A27C61CD3199300B1B892 /* FMMosaicLayout-Bridging-Header.h */,
 			);
 			path = FMMosaicLayout;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				E99A6DF8EE0F2180DCE32AAA /* Copy Pods Resources */,
+				D99E240D066433E3A4273002 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +279,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				815135504CA12D6B2AF5212F /* Copy Pods Resources */,
+				B4ED9FCE3E0A9C5B098E114A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FM;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = JVillella;
 				TargetAttributes = {
@@ -388,6 +396,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B4ED9FCE3E0A9C5B098E114A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99E240D066433E3A4273002 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMMosaicLayout/Pods-FMMosaicLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E99A6DF8EE0F2180DCE32AAA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +452,7 @@
 				B952EA111ACC380700A979A6 /* FMFooterView.m in Sources */,
 				B986BA231A8A5F6000E4584D /* FMMosaicCellView.m in Sources */,
 				B986BA241A8A5F6000E4584D /* FMMosaicCollectionViewController.m in Sources */,
+				429A27C81CD3199300B1B892 /* RUMosaicLayout.swift in Sources */,
 				B952EA161ACC382600A979A6 /* FMHeaderView.m in Sources */,
 				B986BA251A8A5F6000E4584D /* main.m in Sources */,
 			);
@@ -551,11 +590,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FMMosaicLayout/FMMosaicLayout-Prefix.pch";
 				INFOPLIST_FILE = "FMMosaicLayout/FMMosaicLayout-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FMMosaicLayout/FMMosaicLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -566,11 +609,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FMMosaicLayout/FMMosaicLayout-Prefix.pch";
 				INFOPLIST_FILE = "FMMosaicLayout/FMMosaicLayout-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FMMosaicLayout/FMMosaicLayout-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
